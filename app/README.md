@@ -5,6 +5,8 @@ A web tool that extracts TTB-required fields from alcohol beverage label images,
 **Stack:** Node.js (Express) + Vue 3 (Vite) + Postgres + Tesseract (OCR) + Groq Llama 3.1 8B (LLM).
 
 > Note on OCR choice: the architecture spec named PaddleOCR. PaddleOCR is Python-only, so for an all-Node deployment this prototype uses Tesseract instead. Quality is slightly lower on stylized label fonts; swap-in via a Python sidecar is a straightforward production change (tracked in REQUIREMENTS §8).
+## Testing with Sample Images
+Sample images can be found in the scripts/sample-labels directory along with the JSON representation of the extracted fields. Some test labels will fail to parse - this is intentional.
 
 ## Local development
 
@@ -76,21 +78,6 @@ For comparison mode, supply a JSON object with any of these keys (string values)
 - `progress` — `{ completed, total }`
 - `batch_done` — `{ batch_id, error_count }`
 
-## Deploy to fly.io
-
-```bash
-fly launch --no-deploy --copy-config       # accept defaults, keep our fly.toml
-fly postgres create --name ttb-labels-db   # provision Postgres
-fly postgres attach ttb-labels-db          # sets DATABASE_URL automatically
-fly secrets set \
-  APP_PASSWORD="$(openssl rand -hex 16)" \
-  SESSION_SECRET="$(openssl rand -hex 32)" \
-  GROQ_API_KEY="gsk_..."
-fly volumes create ttb_data --size 5
-fly deploy
-```
-
-After first deploy, the app is reachable at `https://<app>.fly.dev`. Use the printed `APP_PASSWORD` to log in.
 
 ## Architecture summary
 
