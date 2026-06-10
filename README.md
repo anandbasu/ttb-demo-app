@@ -152,13 +152,7 @@ Open **http://localhost:5175** and you should see:
 
 ### Option A — use the included sample labels (recommended first run)
 
-The repo ships with 5 synthetic test labels designed for clean OCR. Generate them once:
-
-```bash
-node scripts/generate-sample-labels.js
-```
-
-Output appears in `app/scripts/sample-labels/`:
+The repo ships with 5 synthetic test labels designed for clean OCR in `app/scripts/sample-labels/`:
 
 | File | What it tests |
 |---|---|
