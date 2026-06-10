@@ -286,26 +286,7 @@ label-recognition-app/
     └── uploads/             ← runtime: raw uploaded images (gitignored)
 ```
 
----
 
-## Deploying to fly.io
-
-See [`app/README.md`](./app/README.md#deploy-to-flyio) for the step-by-step. Short version:
-
-```bash
-cd app
-fly launch --no-deploy --copy-config
-fly postgres create --name ttb-labels-db --region iad
-fly postgres attach ttb-labels-db
-fly volumes create ttb_data --size 5
-fly secrets set \
-  APP_PASSWORD="$(openssl rand -hex 12)" \
-  SESSION_SECRET="$(openssl rand -hex 32)" \
-  GROQ_API_KEY="gsk_..."
-fly deploy
-```
-
-Verify: `https://<your-app>.fly.dev/api/health` should return `{"status":"ok"}`.
 
 ---
 
