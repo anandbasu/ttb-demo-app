@@ -1,0 +1,16 @@
+{
+  "description": "Spirits — same as bourbon_clean but warning has Jenny's case violation: \"Government Warning\" in title case, not all caps. Must FAIL the compliance check.",
+  "expected": {
+    "brand_name": "OLD TOM DISTILLERY",
+    "class_type": "Kentucky Straight Bourbon Whiskey",
+    "alcohol_content_abv": "45% Alc./Vol.",
+    "alcohol_content_proof": "90 Proof",
+    "net_contents": "750 mL",
+    "producer_name": "Old Tom Distillery",
+    "producer_address": "Bardstown, Kentucky, USA",
+    "government_warning_present": true,
+    "government_warning_text_exact_match": false,
+    "government_warning_prefix_all_caps": false,
+    "beverage_type": "spirits"
+  }
+}

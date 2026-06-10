@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #app {
+    height: 100%;
+  }
+  body {
+    @apply bg-offwhite text-navy-deep;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-navy ring-offset-2 ring-offset-offwhite;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-base font-semibold
+           transition shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-offwhite;
+  }
+  .btn-primary {
+    @apply btn bg-navy text-white hover:bg-navy-soft active:bg-navy-deep disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-navy border border-navy/20 hover:bg-ice/40 disabled:opacity-50;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-navy/10;
+  }
+  .label {
+    @apply block text-sm font-semibold text-navy/70 mb-1;
+  }
+  .input {
+    @apply w-full rounded-lg border border-navy/20 bg-white px-3 py-2 text-base focus-visible:border-navy;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-semibold;
+  }
+  .pill-ok      { @apply pill bg-teal-soft text-teal; }
+  .pill-warn    { @apply pill bg-amber-soft text-amber; }
+  .pill-bad     { @apply pill bg-coral-soft text-coral; }
+  .pill-neutral { @apply pill bg-ice text-navy; }
+}

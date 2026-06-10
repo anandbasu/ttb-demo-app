@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+
+# Build artefacts (regenerated from build/build_arch.js)
+build/slide-*.jpg
+build/ARCHITECTURE.pdf
+build/ARCHITECTURE.pptx.png
+build/package-lock.json
+build/node_modules

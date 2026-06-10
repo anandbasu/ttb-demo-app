@@ -1,0 +1,16 @@
+{
+  "description": "Wine — Napa cab, all fields present, canonical warning.",
+  "expected": {
+    "brand_name": "VALLEY OAKS VINEYARD",
+    "class_type": "Napa Valley Cabernet Sauvignon",
+    "alcohol_content_abv": "13.5% Alc./Vol.",
+    "alcohol_content_proof": null,
+    "net_contents": "750 mL",
+    "producer_name": "Valley Oaks Vineyard",
+    "producer_address": "Napa, California, USA",
+    "government_warning_present": true,
+    "government_warning_text_exact_match": true,
+    "government_warning_prefix_all_caps": true,
+    "beverage_type": "wine"
+  }
+}

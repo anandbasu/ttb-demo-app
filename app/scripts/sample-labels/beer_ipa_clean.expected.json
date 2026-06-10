@@ -1,0 +1,16 @@
+{
+  "description": "Beer — American IPA, all fields present, canonical warning.",
+  "expected": {
+    "brand_name": "NORTHERN PINES BREWING",
+    "class_type": "American India Pale Ale",
+    "alcohol_content_abv": "6.8% Alc./Vol.",
+    "alcohol_content_proof": null,
+    "net_contents": "12 FL OZ (355 mL)",
+    "producer_name": "Northern Pines Brewing Co.",
+    "producer_address": "Portland, Oregon, USA",
+    "government_warning_present": true,
+    "government_warning_text_exact_match": true,
+    "government_warning_prefix_all_caps": true,
+    "beverage_type": "beer"
+  }
+}

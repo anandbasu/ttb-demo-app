@@ -1,0 +1,16 @@
+{
+  "description": "Spirits — bourbon, all fields present, canonical warning. Happy-path test.",
+  "expected": {
+    "brand_name": "OLD TOM DISTILLERY",
+    "class_type": "Kentucky Straight Bourbon Whiskey",
+    "alcohol_content_abv": "45% Alc./Vol.",
+    "alcohol_content_proof": "90 Proof",
+    "net_contents": "750 mL",
+    "producer_name": "Old Tom Distillery",
+    "producer_address": "Bardstown, Kentucky, USA",
+    "government_warning_present": true,
+    "government_warning_text_exact_match": true,
+    "government_warning_prefix_all_caps": true,
+    "beverage_type": "spirits"
+  }
+}
