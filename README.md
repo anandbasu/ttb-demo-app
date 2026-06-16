@@ -147,6 +147,9 @@ Open **http://localhost:5175** and you should see:
 - Type the `APP_PASSWORD` you set in step 4 → you're in
 
 ---
+## Working Prototype
+Open https://ttb-label-recognition.fly.dev/
+Password provided in the submitted form.
 
 ## Trying it out
 
