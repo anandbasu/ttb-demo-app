@@ -55,8 +55,8 @@ If any of these fail, fix that first before continuing.
 ### 1. Clone
 
 ```bash
-git clone https://github.com/abasu41/label-recognition-app.git
-cd label-recognition-app/app
+git clone https://github.com/anandbasu/ttb-demo-app.git
+cd ttb-demo-app/app
 ```
 
 > All subsequent commands run from the `app/` directory unless noted.
